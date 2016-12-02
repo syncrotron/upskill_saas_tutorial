@@ -20,7 +20,7 @@
 
 
 h1, h2, h3{
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .navbar, .home-callout{
@@ -40,4 +40,22 @@ h1, h2, h3{
 
 .navbar{
   border:none;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+}
+
+.navbar-default .navbar-brand:hover{
+  color: white;
+  opacity: 0.75;
+}
+
+.navbar-default .navbar-nav > li > a{
+  color:white;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+  color:white;
+  opacity: 0.75;
 }
