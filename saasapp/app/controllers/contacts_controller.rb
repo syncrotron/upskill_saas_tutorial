@@ -13,7 +13,7 @@ class ContactsController < ApplicationController
     else
       #gets errors thrown by ruby and forms english error warnings 
       #into an array that is then joined to one string
-      flash[:error] = @contact.errors.full_messages.join(", ")
+      flash[:danger] = @contact.errors.full_messages.join(", ")
       redirect_to new_contact_path
     end
   end
