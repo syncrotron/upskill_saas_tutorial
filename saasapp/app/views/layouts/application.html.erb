@@ -5,7 +5,11 @@
     <%= csrf_meta_tags %>
     <link href="//fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag "https://js.stripe.com/v2/", type: 'text/javascript' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!--Problem with STRIPE_PUBLIC_KEY in stripe.rb-->
+    <!--Using Key instead-->
+    <%= tag :meta, :name => "stripe-key", :content => "pk_test_PNE6a3HiHTHpd04wZ3jrJlJq" %>
   </head>
 
   <body>
