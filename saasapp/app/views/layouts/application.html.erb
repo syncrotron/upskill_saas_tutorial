@@ -9,7 +9,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <!--Problem with STRIPE_PUBLIC_KEY in stripe.rb-->
     <!--Using Key instead-->
-    <%= tag :meta, :name => "stripe-key", :content => "pk_test_PNE6a3HiHTHpd04wZ3jrJlJq" %>
+    <%= tag :meta, :name => "stripe-key", :content => STRIPE_PUBLIC_KEY %>
   </head>
 
   <body>
